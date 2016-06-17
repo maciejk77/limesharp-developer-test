@@ -1,5 +1,6 @@
 // Make this work (repeat 3 times the contents of an array):
 // repeat([1,2,3]) => [1,2,3,1,2,3,1,2,3]
+"use strict";
 
 var newArr = [];
 

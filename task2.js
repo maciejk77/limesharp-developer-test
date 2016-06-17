@@ -1,5 +1,6 @@
 // Make this work (no vowels, lowercase except the first letter):
 // reformat("liMeSHArp DeveLoper TEST") => Lmshrp dvlpr tst
+"use strict";
 
 var vowels = ["a", "e", "u", "i", "o"];
 var text = "liMeSHArp DeveLoper TEST";

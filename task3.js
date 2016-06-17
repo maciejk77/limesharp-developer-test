@@ -1,6 +1,7 @@
 // Make this work (without using any built in functions, only a for loop, 
 //return the next binary number in a string or as an array)
 // next_binary_number([1,0]) ==> [1,1]
+"use strict";
 
 var decimalArray = []; 
 var number = 0; 
@@ -19,7 +20,7 @@ function next_binary_number(binArray) {
 // Function to convert binary to decimal number
 function bin2dec(binArray) {
   // array of letters in reverse order
-  revBinArray = binArray.reverse();
+  var revBinArray = binArray.reverse();
   // loop to calculate num value
   for(var i=0; i<revBinArray.length; i++) { 
     if(revBinArray[i] === 1 ) { 
@@ -33,7 +34,7 @@ function bin2dec(binArray) {
 function dec2bin(decimalNumber) {
   while(decimalNumber >= 2) {  
     // Getting a remainder of the binary division
-    remainder = decimalNumber % 2;
+    var remainder = decimalNumber % 2;
     // Getting a decimal number
     decimalNumber = (decimalNumber - remainder) / 2;
     // Pushing reminder to the array of 0's and 1's
