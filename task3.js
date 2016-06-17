@@ -3,11 +3,9 @@
 
 // next_binary_number([1,0]) ==> [1,1]
 
-var binArr = [1,0,0,1,1,0,1,1,1,1];
-var decArr = [];
-//var decNum = 12; 
+var binArr = [1,0];
+var decArr = []; 
 var num = 0; 
-
 
 var x = bin2dec(binArr);
 console.log(x);
@@ -33,10 +31,17 @@ function bin2dec(binArray) {
 // Function to convert decimal to binary number
 function dec2bin(decNum) {
   while(decNum >= 2) {
-    el = decNum % 2;
-    decNum = (decNum - el) / 2;
-    decArr.push(el);
+    
+    // Gettin a remainder of the binary division
+    remainder = decNum % 2;
+    // Getting a decimal number
+    decNum = (decNum - remainder) / 2;
+    // Pushin reminder to the array of 0's and 1's
+    decArr.push(remainder);
   }
+  // Adding a last quotient to the array
+  decArr.push(decNum);
+  // Reversing the order to get the final binary number array
   return decArr.reverse();
 }
 
