@@ -5,17 +5,16 @@ var vowels = ["a", "e", "u", "i", "o"];
 var text = "liMeSHArp DeveLoper TEST";
 var newText = [];
 
-function reformat(text) {
+// Calling a function with a string stored in text variable (text)
+reformat(text);
 
+function reformat(text) {
   // Text to lower case
   text = text.toLowerCase();
-
   // Splitting text to an array of letters
   newText = text.split('');
-
   // Overwritting first letter in array to upper case
   newText[0] = newText[0].toUpperCase();
-
   // Dropping vowels in the array of letters
   for(var i=0; i<newText.length; i++) {
     for(var j=0; j<vowels.length; j++) {
@@ -27,12 +26,9 @@ function reformat(text) {
 
   // Joining array of letters into a string
   newText = newText.join('');
-
   return newText;
 }
 
-// Calling a function with a string stored in text variable
-reformat(text);
 
 
 

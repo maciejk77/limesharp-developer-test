@@ -1,7 +1,8 @@
 // Make this work (repeat 3 times the contents of an array):
 // repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 
-// Function repeats elements of the array as many times as is the length of the array
+// Calling a function with a string stored in text variable (arr)
+repeat(arr);
 
 var arr = [1,2,3]; 
 var newArr = [];
@@ -15,5 +16,5 @@ function repeat(arr) {
   return newArr;
 }
 
-repeat(arr);
+
 
