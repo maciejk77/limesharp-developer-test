@@ -2,7 +2,7 @@
 // reformat("liMeSHArp DeveLoper TEST") => Lmshrp dvlpr tst
 "use strict";
 
-// Calling a function with a string stored in text variable (text)
+// Calling a function with a string
 reformat("liMeSHArp DeveLoper TEST");
 
 function reformat(string) {
