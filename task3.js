@@ -22,7 +22,7 @@ function bin2dec(binArray) {
   // array of letters in reverse order
   var revBinArray = binArray.reverse();
   // loop to calculate num value
-  for(var i=0; i<revBinArray.length; i++) { 
+  for(var i = 0; i < revBinArray.length; i++) { 
     if(revBinArray[i] === 1 ) { 
       number = number + Math.pow(2,i) 
     } 
@@ -45,8 +45,3 @@ function dec2bin(decimalNumber) {
   // Reversing the order to get the final binary number array
   return decimalArray.reverse();
 }
-
-
-
-
-

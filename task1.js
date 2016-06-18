@@ -8,8 +8,8 @@ var newArr = [];
 repeat([1,2,3]);
 
 function repeat(array) {
-  for(var i=0; i<array.length; i++) {
-    for(var j=0; j<array.length; j++) {
+  for(var i = 0; i < array.length; i++) {
+    for(var j = 0; j < array.length; j++) {
       newArr.push(array[j]);
     }
   }
