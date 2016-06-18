@@ -2,35 +2,16 @@
 // reformat("liMeSHArp DeveLoper TEST") => Lmshrp dvlpr tst
 "use strict";
 
-var vowels = ["a", "e", "u", "i", "o"];
-var text = "liMeSHArp DeveLoper TEST";
-var newText = [];
-
 // Calling a function with a string stored in text variable (text)
-reformat(text);
+reformat("liMeSHArp DeveLoper TEST");
 
-function reformat(text) {
-  // Text to lower case
-  text = text.toLowerCase();
-  // Splitting text to an array of letters
-  newText = text.split('');
-  // Overwritting first letter in array to upper case
-  newText[0] = newText[0].toUpperCase();
-  // Dropping vowels in the array of letters
-  for(var i=0; i<newText.length; i++) {
-    for(var j=0; j<vowels.length; j++) {
-      if(newText[i] === vowels[j]) {
-        newText.splice(i,1);
-      }
-    }
-  }
-
-  // Joining array of letters into a string
-  newText = newText.join('');
-  return newText;
+function reformat(string) {
+  // Capitilizing first letter
+  var firstLetter = string[0].toUpperCase();
+  // Lower case for the remaining letters
+  var strippedString = string.substring(1).toLowerCase();
+  // Regex to drop vowels from the string
+  var reducedString = strippedString.replace(/[aeiou]/gi, '');
+  // String concatenation: first capital letter and remaining letters in smaller case.
+  return firstLetter + reducedString;
 }
-
-
-
-
-
